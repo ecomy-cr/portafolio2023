@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Curriculum Vitae</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="{% url 'perfil' %}" class="logo"
+        ><img src="{% static 'img/logo.png' %}"
+      /></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="#services">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-text">
+        <h4>Portafolio Lunar 2023</h4>
+        <h1>Yeisson<span>Araya</span></h1>
+        <h3>Seguridad nocturna, tecnologìa y màs</h3>
+        <a href="#" class="btn">Mi WhatsApp </a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="{% static 'img/about.png' %}" />
+      </div>
+
+      <div class="about-text">
+        <h2>Empresas donde he trabajado</h2>
+        <h4>2017 - 2023</h4>
+        <br />
+
+        <div class="about-gri">
+          <div class="about-in">
+            <h5>1. Securtec S.A</h5>
+          </div>
+
+          <div class="about-in">
+            <h5>2. COSETAP S.A</h5>
+          </div>
+
+          <div class="about-in">
+            <h5>3. STS Security S.A</h5>
+          </div>
+
+          <div class="about-in">
+            <h5>4. Servicios Pùblicos de Heredia (ESPH)</h5>
+          </div>
+          <div class="about-in">
+            <h5>5. Instituo Tècnico Nacional de Costa Rica</h5>
+          </div>
+        </div>
+        <a href="#" class="btn">WhatsApp</a>
+      </div>
+    </section>
+
+    <section
+      style="
+        background-image: url(../static/img/3.jpg);
+
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: flex-start;
+      "
+      class="services"
+      id="services"
+    >
+      <div class="main-text">
+        <h2>Experiencia laboral</h2>
+        <h4>Seguridad privada, Redes informàticas y programaciòn</h4>
+      </div>
+
+      <div class="services-content">
+        <div class="box">
+          <img src="{% static 'img/serv1.png' %}" />
+          <h3>Oficial de seguridad</h3>
+          <p>
+            Vigilancia diurna y nocturna. Garantizar el cumplimiento de los
+            protocòlos de seguridad establecidos para evitar accidentes,
+            lesiones y otros factores relacionados con la seguridad, como daños
+            a los materiales y maquinarias.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="{% static 'img/serv2.png' %}" />
+          <h3>Supervisor de seguridad</h3>
+          <p>
+            Coordinar las actividades de los vigilantes. Instruir y verificar
+            que los trabajadores conozcan y cumplan con los estándares de
+            seguridad y utilicen adecuadamente los equipos de protección
+            personal, entre otros.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="{% static 'img/serv2.png' %}" />
+          <h3>Escolta</h3>
+          <p>
+            Cumplir indicaciones de protecciòn contra robo, resguardo con alto calibre, GPS.
+          </p>
+        </div>
+
+
+        <div class="box">
+          <img src="{% static 'img/serv3.png' %}" />
+
+          <h3>Redes Informàticas</h3>
+          <p>
+            Cableado estructurado. Mantener y solucionar posibles problemas en
+            los dispositivos de red.
+          </p>
+        </div><div class="box">
+          <img src="{% static 'img/serv3.png' %}" />
+
+          <h3>Instructor computacional</h3>
+          <p>
+            Python Programming Language.
+          </p>
+        </div>
+        <div class="box">
+          <img src="{% static 'img/serv3.png' %}" />
+          <h3>Desarrollador web</h3>
+          <p>Desarrollar y crear pàgina web a la medida para condominio.</p>
+        </div>
+        <div class="box">
+          <img src="{% static 'img/serv3.png' %}" />
+          <h3>Gestor de base de datos</h3>
+          <p>
+            Controlar el flujo de datos y gestionamiento de la base de datos.
+          </p>
+        </div>
+        <div class="box">
+          <img src="{% static 'img/serv3.png' %}" />
+          <h3>Otros</h3>
+          <p>
+            Mantenimiento de quintas, Supervisor de Palma Africana, Paqueterias,
+            Departamento de becas, otros...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portafolio" id="proyectos">
+      <div class="main-text">
+        <h2>Proyectos</h2>
+        <h4>Programaciòn, Seguridad Privada y Agricultura</h4>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="{% static 'img/portfolio1.jpg' %}" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6 style="font-size: 0.3cm">Programacion, Aplicaciones</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>Aplicacion para condominios</h3>
+          <br />
+          <p style="text-align: center">
+            Control de ingreso y salidas, Control de areas comunes, Control de
+            mascotas, otros.
+          </p>
+        </div>
+
+        <div class="row">
+          <img src="{% static 'img/portfolio1.jpg' %}" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6 style="font-size: 0.3cm">Programacion, Aplicaciones</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>Control de unidades QR</h3>
+          <br />
+          <p style="text-align: center">
+            Control del uso de automòviles & camiones, Salidas.
+          </p>
+        </div>
+
+        <div class="row">
+          <img src="{% static 'img/portfolio1.jpg' %}" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6 style="font-size: 0.3cm">Programacion, Aplicaciones</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>Registro de citas mèdicas</h3>
+          <br />
+          <p style="text-align: center">
+            Registro para citas mèdicas por zonas.
+          </p>
+        </div>
+
+        <div class="row">
+          <img src="{% static 'img/portfolio1.jpg' %}" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6 style="font-size: 0.3cm">Programacion, Aplicaciones</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3 >Red blog</h3>
+          <br />
+          <p style="text-align: center">
+            Red blog para postear con tus amigos.
+          </p>
+        </div>
+        <div class="row">
+          <img src="{% static 'img/portfolio1.jpg' %}" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6 style="font-size: 0.3cm">Redes informàticas</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div><h3>
+            Càmaras de seguridad, Alarmas contra incendio
+          </h3>
+          <br />
+          <p style="text-align: center">
+            Planificacion y estructura del Cableado estructurado, desarrollo y
+            ejecuciòn
+          </p>
+        </div>
+
+        <div class="row">
+          <img src="{% static 'img/portfolio1.jpg' %}" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6 style="font-size: 0.3cm">Agricultura</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>Tomate hidropònico</h3>
+          <br />
+          <p style="text-align: center">Germinacion, desarrollo y venta</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2 style="text-align: center">Contactame</h2>
+        <hr />
+        <br />
+        <div class="contact-list" style="text-align: center">
+          <li><a href="#">Guanacaste - Heredia - Puntarenas</a></li>
+          <li><a href="#">jeisonr@gmail.com</a></li>
+          <li><a href="#">+506 8813 8520</a></li>
+        </div>
+        <div class="contact-icons" style="text-align: center">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Asunto"  />
+
+          <input style="background: rgb(35, 162, 64);" type="submit" value="Enviar" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <div class="last-text">
+      <p>©2022 Servicios profesionales Yeisson Araya</p>
+    </div>
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

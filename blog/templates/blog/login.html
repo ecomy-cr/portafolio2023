@@ -1,0 +1,12 @@
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+
+<form class="form" method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+
+	<button  style=" border-radius: 5cm; background-color: rgb(17, 58, 35);" type="submit" id="submit">Iniciar Sesiòn</button>
+</form>
+
+{% endblock %}

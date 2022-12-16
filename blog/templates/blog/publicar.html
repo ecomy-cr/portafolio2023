@@ -1,0 +1,12 @@
+{% extends 'blog/layout.html' %}
+
+{% block content %}
+
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button  style=" border-radius: 5cm; background-color: rgb(17, 58, 35);" type="submit" class="post" id="" >Post!</button>
+	
+</form>
+
+{% endblock %}
